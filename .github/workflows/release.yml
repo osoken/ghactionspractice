@@ -18,7 +18,7 @@ jobs:
 
       - name: Renew version
         id: renew_version
-        run: sed -i "s/__version__ = \".*\"/__version_ = \"${{ steps.get_version.outputs.VERSION }}\"/" osokenghactionspractice/__init__.py
+        run: sed -i "s/__version__ = \".*\"/__version__ = \"${{ steps.get_version.outputs.VERSION }}\"/" osokenghactionspractice/__init__.py
 
       - name: Commit
         run: |
